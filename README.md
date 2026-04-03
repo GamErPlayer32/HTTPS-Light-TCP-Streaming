@@ -162,7 +162,7 @@ python main.py [OPTIONS]
 | `--tls` | Enable TLS/SSL |
 | `--tls-cert PATH` | TLS certificate file (.pem) |
 | `--tls-key PATH` | TLS private key file (.pem) |
-| `--no-verify-ssl` | Skip server certificate verification |
+| `--verify-ssl` | server certificate verification |
 | `--auth-token TOKEN` | Shared authentication token |
 
 ### Web Dashboard
@@ -292,5 +292,5 @@ The application is a single-file Python program (`main.py`) with these core clas
 | Connection refused | Check firewall, verify `--http-host`/`--http-port` match |
 | High latency | Try `--method websocket` or `--auto-detect`, enable `--no-nagle` |
 | Auth errors | Ensure `--auth-token` matches on both server and client |
-| SSL errors | Use `--no-verify-ssl` for self-signed certs (dev only) |
+| SSL | Use `--verify-ssl` for self-signed certs |
 | Methods rejected | Server must have the method enabled in `--allowed-methods` |
