@@ -1,0 +1,3 @@
+aiohttp>=3.9.0
+dearpygui>=2.0.0
+psutil>=5.9.0
