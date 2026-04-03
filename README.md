@@ -15,6 +15,7 @@ Bridges TCP or UDP traffic over standard HTTP/HTTPS connections. A **server** si
 This is useful when:
 - Firewalls or proxies block raw TCP/UDP but allow HTTP(S).
 - You need to tunnel game traffic (Minecraft, Source engine, Terraria, etc.) through restrictive networks.
+- can be used with cloudflare tunnel acting as a Twingate/Tailsacle/Hamachi style VPN
 - You want to add TLS encryption and authentication to an existing unencrypted service.
 
 ```
